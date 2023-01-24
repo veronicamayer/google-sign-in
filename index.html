@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google Sign In Example</title>
+        <script
+            src="https://apis.google.com/js/platform.js"
+            async
+            defer
+        ></script>
+        <meta name="google-signin-client_id" content="399383325495-v5vm1db9ugi3bp4a270775emqcotib4q.apps.googleusercontent.com" />
+    </head>
+    <body>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <script>
+            function onSignIn(googleUser) {
+                var profile = googleUser.getBasicProfile();
+                alert("Welcome, " + profile.getName());
+            }
+        </script>
+    </body>
+</html>
